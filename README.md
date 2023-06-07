@@ -6,3 +6,7 @@ Kafka Ui or Adminer: http://localhost:8080/ (Doesn't work together, both wants t
 
 - [x] 7 Containers (2 Api, 1 Background Service, 1 Kafka, 1 Kafka Ui, 1 Adminer, 1 Postgres)
 - [x] 27 Tests
+
+Containers And The Flow
+-------------------
+![IMG_20230608_012025.jpg](IMG_20230608_012025.jpg)
