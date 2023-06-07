@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Assignment.WorkerService.Report": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

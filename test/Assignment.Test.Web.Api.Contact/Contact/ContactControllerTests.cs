@@ -3,13 +3,14 @@ using Assignment.Application.Contact.Contact;
 using Assignment.Application.Contact.Contact.Dto;
 using Assignment.Application.Shared.Dto;
 using Assignment.Domain.Entities;
+using Assignment.Test.Shared;
 using Assignment.Web.Api.Contact.Controllers;
 using Assignment.Web.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
 
-namespace Assignment.Tests.Web.Api.Contact.Contact;
+namespace Assignment.Test.Web.Api.Contact.Contact;
 
 public class ContactControllerTests : WebApiTestBase
 {

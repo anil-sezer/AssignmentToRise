@@ -12,9 +12,9 @@ namespace Assignment.Application.Contact.Contact;
 
 public class ContactAppService : AppServiceBase, IContactAppService
 {
-    private readonly AssignmentDbContext _dbContext;
+    private readonly ContactDbContext _dbContext;
 
-    public ContactAppService(AssignmentDbContext dbContext)
+    public ContactAppService(ContactDbContext dbContext)
     {
         _dbContext = dbContext;
     }

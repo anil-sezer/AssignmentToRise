@@ -7,12 +7,9 @@
 
         <IsPackable>false</IsPackable>
         <IsTestProject>true</IsTestProject>
-        <RootNamespace>Assignment.Tests.IntegrationTests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.5" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.5" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.5.0" />
         <PackageReference Include="xunit" Version="2.4.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
@@ -23,11 +20,6 @@
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\..\src\Assignment.Web.Api.Contact\Assignment.Web.Api.Contact.csproj" />
-      <ProjectReference Include="..\Assignment.Test.Shared\Assignment.Test.Shared.csproj" />
     </ItemGroup>
 
 </Project>

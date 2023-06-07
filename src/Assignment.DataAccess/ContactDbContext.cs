@@ -4,19 +4,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Assignment.DataAccess;
 
-public class AssignmentDbContext : DbContext
+public class ContactDbContext : DbContext
 {
-    public AssignmentDbContext(DbContextOptions<AssignmentDbContext> options)
+    public ContactDbContext(DbContextOptions<ContactDbContext> options)
         : base(options)
     {
     }
 
     public virtual DbSet<Contacts> Contacts { get; set; }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // base.OnModelCreating(modelBuilder);
-
         modelBuilder.Entity<Contacts>(entity =>
         {
             entity.Property(e => e.Company)

@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc.Testing;
 
-namespace Assignment.Tests.IntegrationTests;
+namespace Assignment.Test.Integration.Contact;
 
-public class IntegrationTestBase
+public class IntegrationTestBaseForContact
 {
     private readonly WebApplicationFactory<Program> _factory;
 
-    public IntegrationTestBase(WebApplicationFactory<Program> factory)
+    public IntegrationTestBaseForContact(WebApplicationFactory<Program> factory)
     {
         _factory = factory;
         // var configuration = new ConfigurationBuilder()

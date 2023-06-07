@@ -18,22 +18,39 @@ services:
       - ASPNETCORE_URLS=http://+:5000
       - ASPNETCORE_ENVIRONMENT=Development
   
-#  bt-report:
-#    hostname: bt-report
-#    container_name: bt-report
-#    build:
-#      dockerfile: images/background_task/Dockerfile
-#      context: .
-#    restart: "always"
-#    ports:
-#      - "8002:5002"
-#    networks:
-#      - common
-#    depends_on:
-#      - db
-#    environment:
-#      - ASPNETCORE_URLS=http://+:5002
-#      - ASPNETCORE_ENVIRONMENT=Development
+  api-report:
+    hostname: api-report
+    container_name: api-report
+    build:
+      dockerfile: images/api_report/Dockerfile
+      context: .
+    restart: "always"
+    ports:
+      - "8001:5001"
+    networks:
+      - common
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_URLS=http://+:5001
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  bt-report:
+    hostname: bt-report
+    container_name: bt-report
+    build:
+      dockerfile: images/background_task/Dockerfile
+      context: .
+    restart: "always"
+    ports:
+      - "8002:5002"
+    networks:
+      - common
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_URLS=http://+:5002
+      - ASPNETCORE_ENVIRONMENT=Development
 
   db:
     build:

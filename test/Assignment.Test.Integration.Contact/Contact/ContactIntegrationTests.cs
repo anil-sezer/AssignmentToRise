@@ -1,21 +1,21 @@
-using Xunit;
 using System.Net;
 using System.Text;
 using Assignment.Application.Contact.Contact.Dto;
 using Assignment.Application.Shared.Dto;
-using FluentAssertions;
 using Assignment.Domain;
-using Assignment.Domain.Enums;
 using Assignment.Domain.Entities;
-using Assignment.Web.Core.Models;
+using Assignment.Domain.Enums;
 using Assignment.Domain.Extensions;
+using Assignment.Test.Integration.Contact.Contact.DataBuilder;
+using Assignment.Test.Integration.Contact.CustomWebApplicationFactories;
+using Assignment.Web.Core.Models;
+using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Assignment.Tests.IntegrationTests.Contact.DataBuilder;
-using Assignment.Tests.IntegrationTests.CustomWebApplicationFactories;
+using Xunit;
 
-namespace Assignment.Tests.IntegrationTests.Contact;
+namespace Assignment.Test.Integration.Contact.Contact;
 
-public class ContactIntegrationTests : IntegrationTestBase, IClassFixture<ContactWebApplicationFactory<Program>>
+public class ContactIntegrationTests : IntegrationTestBaseForContact, IClassFixture<ContactWebApplicationFactory<Program>>
 {
     private readonly HttpClient _httpClient;
 
@@ -65,7 +65,7 @@ public class ContactIntegrationTests : IntegrationTestBase, IClassFixture<Contac
 
         var apiDataResult = (await responseApiResult.Content.ReadAsStringAsync()).FromStringToObject<ApiDataResult<Contacts>>();
         apiDataResult.ResultCode.Should().Be(1);
-        Assert.True(apiDataResult.Data.Id == input.Id);
+        apiDataResult.Data.Id.Should().Be(input.Id);
     }
     
     [Fact]

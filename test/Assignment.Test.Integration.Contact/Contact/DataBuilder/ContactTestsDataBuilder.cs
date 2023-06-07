@@ -3,17 +3,17 @@ using Assignment.Domain;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Enums;
 
-namespace Assignment.Tests.IntegrationTests.Contact.DataBuilder;
+namespace Assignment.Test.Integration.Contact.Contact.DataBuilder;
 
 public class ContactTestsDataBuilder
 {
-    private readonly AssignmentDbContext _dbContext;
+    private readonly ContactDbContext _dbContext;
     public static Contacts ForGetContact;
     public static Contacts ForDeleteContact;
     public static List<Contacts> ForGetContactList;
     public static Contacts ForAddContactConnection;
         
-    public ContactTestsDataBuilder(AssignmentDbContext dbContext)
+    public ContactTestsDataBuilder(ContactDbContext dbContext)
     {
         _dbContext = dbContext;
     }

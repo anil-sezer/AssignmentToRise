@@ -4,7 +4,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5DF16907-A3D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{A87A7B3B-1B01-4B8E-A050-CB4D6C088445}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Web.Api", "src\Assignment.Web.Api\Assignment.Web.Api.csproj", "{54F00436-5840-41C8-9EFC-BBC209420A22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Web.Api.Contact", "src\Assignment.Web.Api.Contact\Assignment.Web.Api.Contact.csproj", "{54F00436-5840-41C8-9EFC-BBC209420A22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Application.Contact", "src\Assignment.Application.Contact\Assignment.Application.Contact.csproj", "{F6AC1ED7-FB1E-463D-9D3E-3CF52A6244B9}"
 EndProject
@@ -20,15 +20,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.DataAccess"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Shared", "test\Assignment.Test.Shared\Assignment.Test.Shared.csproj", "{F1038859-56B2-4705-826E-D4C58F2B226B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Tests.IntegrationTests", "test\Assignment.Tests.IntegrationTests\Assignment.Tests.IntegrationTests.csproj", "{E7FD1665-C5F7-4FDB-AD2B-6D78FFAC3489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Integration.Contact", "test\Assignment.Test.Integration.Contact\Assignment.Test.Integration.Contact.csproj", "{E7FD1665-C5F7-4FDB-AD2B-6D78FFAC3489}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Tests.Web.Api", "test\Assignment.Tests.Web.Api\Assignment.Tests.Web.Api.csproj", "{AB74B56D-34D6-4269-A210-5477776E8DAC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Web.Api.Contact", "test\Assignment.Test.Web.Api.Contact\Assignment.Test.Web.Api.Contact.csproj", "{AB74B56D-34D6-4269-A210-5477776E8DAC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Application.Report", "src\Assignment.Application.Report\Assignment.Application.Report.csproj", "{E912C31A-694A-4F80-9F62-CB129B0B3E7F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Application.Shared", "src\Assignment.Application.Shared\Assignment.Application.Shared.csproj", "{22D0A137-1551-4F21-939C-D097C0F3CE5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.WorkerService.Report", "src\Assignment.WorkerService.Report\Assignment.WorkerService.Report.csproj", "{BBD61630-3CA4-4540-B88C-7409378162B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Application.Report", "test\Assignment.Test.Application.Report\Assignment.Test.Application.Report.csproj", "{E4BF00B2-D253-4185-8C33-ECFC2F65F545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Web.Api.Report", "src\Assignment.Web.Api.Report\Assignment.Web.Api.Report.csproj", "{8A485AAF-9079-4EEF-B505-BA9E578629B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Integration.Report", "test\Assignment.Test.Integration.Report\Assignment.Test.Integration.Report.csproj", "{A3931736-9456-4231-898D-663CA33D39CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment.Test.Web.Api.Report", "test\Assignment.Test.Web.Api.Report\Assignment.Test.Web.Api.Report.csproj", "{4D031905-3202-4A87-ABBE-B4C07954EDF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,10 @@ Global
 		{E912C31A-694A-4F80-9F62-CB129B0B3E7F} = {5DF16907-A3DC-464E-B49E-C99C9E617A93}
 		{22D0A137-1551-4F21-939C-D097C0F3CE5D} = {5DF16907-A3DC-464E-B49E-C99C9E617A93}
 		{BBD61630-3CA4-4540-B88C-7409378162B7} = {5DF16907-A3DC-464E-B49E-C99C9E617A93}
+		{E4BF00B2-D253-4185-8C33-ECFC2F65F545} = {A87A7B3B-1B01-4B8E-A050-CB4D6C088445}
+		{8A485AAF-9079-4EEF-B505-BA9E578629B6} = {5DF16907-A3DC-464E-B49E-C99C9E617A93}
+		{A3931736-9456-4231-898D-663CA33D39CD} = {A87A7B3B-1B01-4B8E-A050-CB4D6C088445}
+		{4D031905-3202-4A87-ABBE-B4C07954EDF0} = {A87A7B3B-1B01-4B8E-A050-CB4D6C088445}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{54F00436-5840-41C8-9EFC-BBC209420A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -103,5 +115,21 @@ Global
 		{BBD61630-3CA4-4540-B88C-7409378162B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBD61630-3CA4-4540-B88C-7409378162B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBD61630-3CA4-4540-B88C-7409378162B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4BF00B2-D253-4185-8C33-ECFC2F65F545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BF00B2-D253-4185-8C33-ECFC2F65F545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BF00B2-D253-4185-8C33-ECFC2F65F545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BF00B2-D253-4185-8C33-ECFC2F65F545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A485AAF-9079-4EEF-B505-BA9E578629B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A485AAF-9079-4EEF-B505-BA9E578629B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A485AAF-9079-4EEF-B505-BA9E578629B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A485AAF-9079-4EEF-B505-BA9E578629B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3931736-9456-4231-898D-663CA33D39CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3931736-9456-4231-898D-663CA33D39CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3931736-9456-4231-898D-663CA33D39CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3931736-9456-4231-898D-663CA33D39CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D031905-3202-4A87-ABBE-B4C07954EDF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D031905-3202-4A87-ABBE-B4C07954EDF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D031905-3202-4A87-ABBE-B4C07954EDF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D031905-3202-4A87-ABBE-B4C07954EDF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

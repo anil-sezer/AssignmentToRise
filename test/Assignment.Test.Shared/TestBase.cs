@@ -8,7 +8,7 @@ namespace Assignment.Test.Shared;
 
 public class TestBase
 {
-    protected readonly AssignmentDbContext DefaultTestDbContext;
+    protected readonly ContactDbContext DefaultTestDbContext;
 
     public TestBase()
     {
@@ -19,11 +19,11 @@ public class TestBase
     /// This method can be used for new scoped (same database) of default dbContext
     /// </summary>
     /// <returns>New scoped instance (same database) of default dbContext</returns>
-    protected AssignmentDbContext GetDefaultTestDbContext()
+    protected ContactDbContext GetDefaultTestDbContext()
     {
         var provider = GetNewHostServiceProvider().CreateScope().ServiceProvider;
 
-        return provider.GetRequiredService<AssignmentDbContext>();
+        return provider.GetRequiredService<ContactDbContext>();
     }
 
     /// <summary>
@@ -32,16 +32,16 @@ public class TestBase
     /// </summary>
     /// <param name="dbContextName"></param>
     /// <returns>Creates new dbContext (new database) with different name</returns>
-    protected AssignmentDbContext GetNewTestDbContext(string dbContextName)
+    protected ContactDbContext GetNewTestDbContext(string dbContextName)
     {
         var provider = GetNewHostServiceProvider().CreateScope().ServiceProvider;
 
-        var dbContextOptionBuilder = new DbContextOptionsBuilder<AssignmentDbContext>();
+        var dbContextOptionBuilder = new DbContextOptionsBuilder<ContactDbContext>();
         dbContextOptionBuilder.UseInMemoryDatabase(dbContextName)
             .EnableDetailedErrors()
             .EnableSensitiveDataLogging();
 
-        return new AssignmentDbContext(dbContextOptionBuilder.Options);
+        return new ContactDbContext(dbContextOptionBuilder.Options);
     }
 
     protected IServiceProvider GetNewHostServiceProvider()

@@ -1,6 +1,5 @@
 using Assignment.Application.Contact;
 using Assignment.Application.Report;
-using Assignment.Application.Shared;
 using Assignment.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -20,7 +19,7 @@ public class TestStartup
         
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddDbContext<AssignmentDbContext>(options =>
+        services.AddDbContext<ContactDbContext>(options =>
         {
             options.UseInMemoryDatabase("AssignmentDbContextTest")
                 .EnableDetailedErrors()

@@ -1,5 +1,5 @@
 using Assignment.DataAccess;
-using Assignment.Tests.IntegrationTests.Contact.DataBuilder;
+using Assignment.Test.Integration.Contact.Contact.DataBuilder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-namespace Assignment.Tests.IntegrationTests.CustomWebApplicationFactories;
+namespace Assignment.Test.Integration.Contact.CustomWebApplicationFactories;
 
 public class ContactWebApplicationFactory<TProgram>
     : WebApplicationFactory<TProgram> where TProgram: class
@@ -18,14 +18,14 @@ public class ContactWebApplicationFactory<TProgram>
         {
             var descriptor = services.SingleOrDefault(
                 d => d.ServiceType ==
-                     typeof(DbContextOptions<AssignmentDbContext>));
+                     typeof(DbContextOptions<ContactDbContext>));
 
             if (descriptor != null)
             {
                 services.Remove(descriptor);
             }
 
-            services.AddDbContext<AssignmentDbContext>(options =>
+            services.AddDbContext<ContactDbContext>(options =>
             {
                 options.UseInMemoryDatabase("InMemoryDbForContactServiceTesting").ConfigureWarnings(x=>x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
                 options.EnableSensitiveDataLogging();
@@ -36,7 +36,7 @@ public class ContactWebApplicationFactory<TProgram>
             using (var scope = sp.CreateScope())
             {
                 var scopedServices = scope.ServiceProvider;
-                var db = scopedServices.GetRequiredService<AssignmentDbContext>();
+                var db = scopedServices.GetRequiredService<ContactDbContext>();
                 var logger = scopedServices.GetRequiredService<ILogger<ContactWebApplicationFactory<TProgram>>>();
 
                 db.Database.EnsureCreated();

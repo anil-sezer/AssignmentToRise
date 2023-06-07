@@ -10,19 +10,19 @@ COPY ["src/Assignment.Domain/Assignment.Domain.csproj", "Assignment.Domain/"]
 COPY ["src/Assignment.DataAccess/Assignment.DataAccess.csproj", "Assignment.DataAccess/"]
 COPY ["src/Assignment.Application.Shared/Assignment.Application.Shared.csproj", "Assignment.Application.Shared/"]
 COPY ["src/Assignment.Web.Core/Assignment.Web.Core.csproj", "Assignment.Web.Core/"]
-COPY ["src/Assignment.Application.Contact/Assignment.Application.Contact.csproj", "Assignment.Application.Contact/"]
-COPY ["src/Assignment.Web.Api.Contact/Assignment.Web.Api.Contact.csproj", "Assignment.Web.Api.Contact/"]
+COPY ["src/Assignment.Application.Report/Assignment.Application.Report.csproj", "Assignment.Application.Report/"]
+COPY ["src/Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj", "Assignment.Web.Api.Report/"]
 
 
-RUN dotnet restore "Assignment.Web.Api.Contact/Assignment.Web.Api.Contact.csproj" --verbosity quiet
+RUN dotnet restore "Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj" --verbosity quiet
 
 COPY src/ .
 
-RUN dotnet build "Assignment.Web.Api.Contact/Assignment.Web.Api.Contact.csproj" -c Release -o /app/build
+RUN dotnet build "Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj" -c Release -o /app/build
 
 FROM build AS publish
 
-RUN dotnet publish "Assignment.Web.Api.Contact/Assignment.Web.Api.Contact.csproj" -c Release -o /app/publish
+RUN dotnet publish "Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj" -c Release -o /app/publish
 
 FROM base AS final
 
@@ -30,4 +30,4 @@ WORKDIR /app
 
 COPY --from=publish /app/publish .
 
-ENTRYPOINT ["dotnet", "Assignment.Web.Api.Contact.dll"]
+ENTRYPOINT ["dotnet", "Assignment.Web.Api.Report.dll"]

@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Assignment.Application.Contact\Assignment.Application.Contact.csproj" />
+      <ProjectReference Include="..\Assignment.Application.Report\Assignment.Application.Report.csproj" />
       <ProjectReference Include="..\Assignment.DataAccess\Assignment.DataAccess.csproj" />
     </ItemGroup>
 

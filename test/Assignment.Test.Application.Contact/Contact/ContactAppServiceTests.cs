@@ -11,7 +11,7 @@ namespace Assignment.Test.Application.Contact.Contact;
 
 public class ContactAppServiceTests : AppServiceTestBase
 {
-    private readonly AssignmentDbContext _dbContext;
+    private readonly ContactDbContext _dbContext;
     private readonly IContactAppService _appService;
 
     public ContactAppServiceTests()
