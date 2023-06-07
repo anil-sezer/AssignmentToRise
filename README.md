@@ -9,4 +9,4 @@ Kafka Ui or Adminer: http://localhost:8080/ (Doesn't work together, both wants t
 
 Containers And The Flow
 -------------------
-![IMG_20230608_012025.jpg](IMG_20230608_012025.jpg)
+![IMG_20230608_014932.jpg](IMG_20230608_014932.jpg)
