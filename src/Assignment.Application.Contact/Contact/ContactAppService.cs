@@ -2,7 +2,7 @@ using System.Net;
 using Assignment.Application.Contact.Contact.Dto;
 using Assignment.Application.Shared;
 using Assignment.Application.Shared.Dto;
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Domain;
 using Assignment.Domain.Entities;
 using Microsoft.EntityFrameworkCore;

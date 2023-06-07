@@ -1,5 +1,5 @@
 using Assignment.Application.Contact;
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Web.Core.Extensions;
 using Microsoft.EntityFrameworkCore;
 

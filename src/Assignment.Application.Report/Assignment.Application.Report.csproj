@@ -11,8 +11,4 @@
       <ProjectReference Include="..\Assignment.DataAccess\Assignment.DataAccess.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <PackageReference Include="Confluent.Kafka" Version="2.1.1" />
-    </ItemGroup>
-
 </Project>

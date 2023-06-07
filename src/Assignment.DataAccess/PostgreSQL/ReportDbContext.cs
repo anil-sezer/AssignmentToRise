@@ -1,8 +1,8 @@
-﻿using Assignment.DataAccess.ValueConverters;
+﻿using Assignment.DataAccess.PostgreSQL.ValueConverters;
 using Assignment.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Assignment.DataAccess;
+namespace Assignment.DataAccess.PostgreSQL;
 
 public class ReportDbContext : DbContext
 {

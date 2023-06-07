@@ -2,7 +2,7 @@ using Assignment.Domain;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Newtonsoft.Json;
 
-namespace Assignment.DataAccess.ValueConverters;
+namespace Assignment.DataAccess.PostgreSQL.ValueConverters;
 
 public class ContactInfoArrayConverter : ValueConverter<ContactInfo[], string>
 {

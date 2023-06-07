@@ -1,4 +1,4 @@
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Test.Integration.Contact.Contact.DataBuilder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;

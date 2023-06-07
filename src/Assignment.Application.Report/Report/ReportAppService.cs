@@ -2,7 +2,8 @@ using System.Net;
 using Assignment.Application.Report.Report.Dto;
 using Assignment.Application.Shared;
 using Assignment.Application.Shared.Dto;
-using Assignment.DataAccess;
+using Assignment.DataAccess.Kafka.Configurations;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 

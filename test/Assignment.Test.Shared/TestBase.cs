@@ -1,4 +1,4 @@
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;

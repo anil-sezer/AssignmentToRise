@@ -1,6 +1,6 @@
 using Assignment.Application.Contact;
 using Assignment.Application.Report;
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;

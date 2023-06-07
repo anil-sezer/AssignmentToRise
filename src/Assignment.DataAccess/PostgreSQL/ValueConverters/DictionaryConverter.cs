@@ -1,9 +1,7 @@
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Newtonsoft.Json;
 
-namespace Assignment.DataAccess.ValueConverters;
-
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+namespace Assignment.DataAccess.PostgreSQL.ValueConverters;
 
 public class DictionaryConverter : ValueConverter<Dictionary<string, int>, string>
 {

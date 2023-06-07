@@ -1,4 +1,4 @@
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Enums;
 

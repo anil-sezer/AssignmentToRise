@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Confluent.Kafka" Version="2.1.1" />
       <PackageReference Include="EFCore.NamingConventions" Version="7.0.2" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
@@ -18,6 +19,10 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Assignment.Domain\Assignment.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Kafka\Configurations\KafkaDestinations.cs" />
     </ItemGroup>
 
 </Project>

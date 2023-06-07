@@ -2,7 +2,7 @@ using Assignment.Application.Contact.Contact.Dto;
 using Assignment.Application.Contact.Contact;
 using Assignment.Domain.Entities;
 using Assignment.Domain.Enums;
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Domain;
 using FluentAssertions;
 using Xunit;

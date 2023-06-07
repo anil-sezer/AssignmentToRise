@@ -1,5 +1,5 @@
 using Assignment.Application.Report;
-using Assignment.DataAccess;
+using Assignment.DataAccess.PostgreSQL;
 using Assignment.Web.Core.Extensions;
 using Microsoft.EntityFrameworkCore;
 
