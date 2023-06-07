@@ -22,4 +22,10 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Assignment.Application.Report\Assignment.Application.Report.csproj" />
+      <ProjectReference Include="..\Assignment.Test.DataAccess\Assignment.Test.DataAccess.csproj" />
+      <ProjectReference Include="..\Assignment.Test.Shared\Assignment.Test.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

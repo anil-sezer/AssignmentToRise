@@ -1,14 +1,15 @@
+using Assignment.Application.Report;
 using Assignment.DataAccess.PostgreSQL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Assignment.Test.Shared;
+namespace Assignment.Test.Application.Report;
 
-public class TestStartup
+public class ReportApplicationTestStartup
 {
-    public TestStartup(IConfiguration configuration)
+    public ReportApplicationTestStartup(IConfiguration configuration)
     {
         Configuration = configuration;
     }
@@ -17,13 +18,15 @@ public class TestStartup
         
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddDbContext<ContactDbContext>(options =>
+        services.AddDbContext<ReportDbContext>(options =>
         {
-            options.UseInMemoryDatabase("AssignmentDbContextTest")
+            options.UseInMemoryDatabase(nameof(ReportDbContext) + "Test")
                 .EnableDetailedErrors()
                 .EnableSensitiveDataLogging()
                 .ConfigureWarnings(x=>x.Ignore(InMemoryEventId.TransactionIgnoredWarning));
         });
+        
+        services.ConfigureApplicationServicesForReport();
     }
 
     public void Configure()

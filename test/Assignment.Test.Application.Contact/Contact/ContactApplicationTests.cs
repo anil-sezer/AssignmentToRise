@@ -9,12 +9,12 @@ using Xunit;
 
 namespace Assignment.Test.Application.Contact.Contact;
 
-public class ContactAppServiceTests : AppServiceTestBase
+public class ContactApplicationTests : ContactApplicationTestBase
 {
     private readonly ContactDbContext _dbContext;
     private readonly IContactAppService _appService;
 
-    public ContactAppServiceTests()
+    public ContactApplicationTests()
     {
         _dbContext = _dbContext = GetDefaultTestDbContext();
         _appService = new ContactAppService(_dbContext);

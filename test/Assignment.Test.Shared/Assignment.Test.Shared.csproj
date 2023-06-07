@@ -27,8 +27,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\Assignment.Application.Contact\Assignment.Application.Contact.csproj" />
-      <ProjectReference Include="..\..\src\Assignment.Application.Report\Assignment.Application.Report.csproj" />
       <ProjectReference Include="..\..\src\Assignment.DataAccess\Assignment.DataAccess.csproj" />
     </ItemGroup>
 
