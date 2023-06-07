@@ -1,0 +1,113 @@
+version: '3.8'
+
+services:
+  api-contact:
+    hostname: api-contact
+    container_name: api-contact
+    build:
+      dockerfile: images/api_contact/Dockerfile
+      context: .
+    restart: "always"
+    ports:
+      - "8000:5000"
+    networks:
+      - common
+    depends_on:
+      - db
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+#  bt-report:
+#    hostname: bt-report
+#    container_name: bt-report
+#    build:
+#      dockerfile: images/background_task/Dockerfile
+#      context: .
+#    restart: "always"
+#    ports:
+#      - "8002:5002"
+#    networks:
+#      - common
+#    depends_on:
+#      - db
+#    environment:
+#      - ASPNETCORE_URLS=http://+:5002
+#      - ASPNETCORE_ENVIRONMENT=Development
+
+  db:
+    build:
+      dockerfile: images/postgres_sql/Dockerfile
+      context: .
+    restart: "always"
+#    hostname: db
+#    container_name: db
+    ports:
+      - "5432:5432" # todo: no need to access from outside, remove this
+    networks:
+      - common
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=placeholder
+      - POSTGRES_DB=test_db
+      
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - common
+
+#  kafka0:
+#    image: confluentinc/cp-kafka:7.2.1
+#    hostname: kafka0
+#    container_name: kafka0
+#    networks:
+#      - common
+#    ports:
+#      - "9092:9092"
+#      - "9997:9997"
+#    environment:
+#      KAFKA_BROKER_ID: 1
+#      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,CONTROLLER:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+#      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka0:29092,PLAINTEXT_HOST://localhost:9092
+#      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+#      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+#      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+#      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+#      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+#      KAFKA_PROCESS_ROLES: 'broker,controller'
+#      KAFKA_NODE_ID: 1
+#      KAFKA_CONTROLLER_QUORUM_VOTERS: '1@kafka0:29093'
+#      KAFKA_LISTENERS: 'PLAINTEXT://kafka0:29092,CONTROLLER://kafka0:29093,PLAINTEXT_HOST://0.0.0.0:9092'
+#      KAFKA_CONTROLLER_LISTENER_NAMES: 'CONTROLLER'
+#      KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+#      KAFKA_JMX_PORT: 9997
+#      KAFKA_JMX_OPTS: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=kafka0 -Dcom.sun.management.jmxremote.rmi.port=9997
+#    volumes:
+#      - ./scripts/update_run.sh:/tmp/update_run.sh
+#    command: "bash -c 'if [ ! -f /tmp/update_run.sh ]; then echo \"ERROR: Did you forget the update_run.sh file that came with this docker-compose.yml file?\" && exit 1 ; else /tmp/update_run.sh && /etc/confluent/docker/run ; fi'"
+    
+#  kafka-ui:
+#    container_name: kafka-ui
+#    image: provectuslabs/kafka-ui:latest
+#    ports:
+#      - "8080:8080"
+#    depends_on:
+#      - kafka0
+#    networks:
+#      - common
+#    environment:
+#      KAFKA_CLUSTERS_0_NAME: local
+#      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka0:29092
+#      KAFKA_CLUSTERS_0_METRICS_PORT: 9997
+#      DYNAMIC_CONFIG_ENABLED: 'true'  # not necessary, added for tests
+
+networks:
+  common:
+    driver: bridge # Maybe use two networks, one for internal communication and one for external?
+    
+#volumes:
+#  kafka_data:
+#    driver: local
