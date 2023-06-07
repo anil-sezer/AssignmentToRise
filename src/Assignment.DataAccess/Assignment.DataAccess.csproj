@@ -20,8 +20,4 @@
       <ProjectReference Include="..\Assignment.Domain\Assignment.Domain.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Migrations\" />
-    </ItemGroup>
-
 </Project>
