@@ -2,6 +2,7 @@ using System.Net;
 using Assignment.Application.Report.Report.Dto;
 using Assignment.Application.Shared;
 using Assignment.Application.Shared.Dto;
+using Assignment.DataAccess.Kafka;
 using Assignment.DataAccess.Kafka.Configurations;
 using Assignment.DataAccess.PostgreSQL;
 using Assignment.Domain.Entities;
@@ -20,8 +21,11 @@ public class ReportAppService : AppServiceBase, IReportAppService
     
     public async Task<AppServiceResult> CreateReportAsync()
     {
-        // Tell Kafka to contact bt to begin creating a report
+        using var kafkaProducerContext = new KafkaProducerContext<CompileReportCommandTopic>();
 
+        var message = await kafkaProducerContext.SendToKafkaAsync(new CompileReportCommandTopic("Create a report"));
+
+        Console.WriteLine(message);
         return Success();
     }
     

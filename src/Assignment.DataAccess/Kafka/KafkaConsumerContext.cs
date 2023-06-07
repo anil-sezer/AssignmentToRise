@@ -9,9 +9,9 @@ public sealed class KafkaConsumerContext<TTopic>: KafkaContext
     private readonly IConsumer<Ignore, string> _consumer;
     private static bool _isThereSomethingToCommit = false;
 
-    public KafkaConsumerContext(string consumerGroupName)
+    public KafkaConsumerContext()
     {
-        _consumer = new ConsumerBuilder<Ignore, string>(GetConfig(consumerGroupName)).Build();
+        _consumer = new ConsumerBuilder<Ignore, string>(GetConfig(nameof(TTopic))).Build();
         
         _consumer.Subscribe(nameof(TTopic));
     }
@@ -46,7 +46,7 @@ public sealed class KafkaConsumerContext<TTopic>: KafkaContext
     {
         return new ConsumerConfig
         {
-            GroupId = consumerGroupName,
+            GroupId = consumerGroupName + "Group",
             BootstrapServers = BootstrapServer,
             EnableAutoCommit = false,
             AutoOffsetReset = AutoOffsetReset.Earliest, 

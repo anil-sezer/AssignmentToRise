@@ -125,6 +125,6 @@ networks:
   common:
     driver: bridge # Maybe use two networks, one for internal communication and one for external?
     
-#volumes:
-#  kafka_data:
-#    driver: local
+volumes:
+  kafka_data:
+    driver: local
