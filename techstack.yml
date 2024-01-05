@@ -1,7 +1,8 @@
 repo_name: anil-sezer/AssignmentToRise
 report_id: 33d6c38ff79f4efcf1598e93aa4e9728
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T12:07:08+00:00'
+timestamp: '2024-01-05T08:48:45+00:00'
 requested_by: anil-sezer
 provider: github
 branch: prod
@@ -16,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1015/1200px-C_Sharp_wordmark.svg.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise
   detection_source: Repo Metadata
 - name: SQL
   description: It is a domain-specific language used in programming
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/images/postgres_sql/config.sql
   detection_source: images/postgres_sql/config.sql
   last_updated_by: anil
   last_updated_on: 2023-06-07 19:36:53.000000000 Z
@@ -38,6 +41,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:04:50.000000000 Z
@@ -52,8 +56,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
-  detection_source_url: src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
-  detection_source: test/Assignment.Test.Web.Api.Report/Assignment.Test.Web.Api.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
+  detection_source: src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:58:42.000000000 Z
 - name: ASP.NET Core
@@ -67,8 +71,8 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/11331/asp.net-core.png
-  detection_source_url: src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
-  detection_source: test/Assignment.Test.Web.Api.Report/Assignment.Test.Web.Api.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
+  detection_source: src/Assignment.Application.Contact/Assignment.Application.Contact.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:58:42.000000000 Z
 - name: Confluent
@@ -80,6 +84,7 @@ tools:
   category: Data Stores
   sub_category: Message Queue
   image_url: https://img.stackshare.io/service/5862/default_89c3b9968d36020bf2eaaf162d706866b6da195f.jpg
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.DataAccess/Assignment.DataAccess.csproj
   detection_source: src/Assignment.DataAccess/Assignment.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 20:14:50.000000000 Z
@@ -92,6 +97,7 @@ tools:
   category: Data Stores
   sub_category: PostgreSQL as a Service
   image_url: https://img.stackshare.io/service/2516/original.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/images/postgres_sql/Dockerfile
   detection_source: images/postgres_sql/Dockerfile
   last_updated_by: anil
   last_updated_on: 2023-06-07 19:36:53.000000000 Z
@@ -104,6 +110,7 @@ tools:
   category: Data Stores
   sub_category: Message Queue
   image_url: https://img.stackshare.io/service/1063/kazUJooF_400x400.jpg
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.DataAccess/Assignment.DataAccess.csproj
   detection_source: src/Assignment.DataAccess/Assignment.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 20:14:50.000000000 Z
@@ -115,6 +122,7 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.DataAccess/Assignment.DataAccess.csproj
   detection_source: src/Assignment.DataAccess/Assignment.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:46:40.000000000 Z
@@ -127,6 +135,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Virtual Machine Platforms & Containers
   image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise
   detection_source: Repo Metadata
 - name: Git
   description: Fast, scalable, distributed revision control system
@@ -136,6 +145,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise
   detection_source: Repo Metadata
 - name: Moq
   description: The most popular and friendly mocking framework for .NET
@@ -145,6 +155,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/1628/1434934.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:04:50.000000000 Z
@@ -156,7 +167,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/2371/jZ6MYx5Y_400x400.png
-  detection_source: test/Assignment.Test.Web.Api.Report/Assignment.Test.Web.Api.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Integration.Report/Assignment.Test.Integration.Report.csproj
+  detection_source: test/Assignment.Test.Integration.Report/Assignment.Test.Integration.Report.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 19:25:20.000000000 Z
 - name: NuGet
@@ -167,6 +179,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Package Managers
   image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:04:50.000000000 Z
@@ -179,6 +192,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/Assignment.sln
   detection_source: Assignment.sln
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:46:40.000000000 Z
@@ -191,8 +205,8 @@ tools:
   category: Build, Test, Deploy
   sub_category: Testing Frameworks
   image_url: https://img.stackshare.io/service/3077/ca5a327feb49ddfe1f4b11548907e5a1_400x400.png
-  detection_source_url: test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
-  detection_source: test/Assignment.Test.Web.Api.Contact/Assignment.Test.Web.Api.Contact.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
+  detection_source: test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:06:04.000000000 Z
 - name: Shell
@@ -204,6 +218,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise
   detection_source: Repo Metadata
 - name: Confluent.Kafka
   description: Confluent's .NET Client for Apache Kafka
@@ -215,7 +230,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13176/default_81ac985912284073db895b0d26abf3657532a164.png
-  detection_source_url: src/Assignment.DataAccess/Assignment.DataAccess.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.DataAccess/Assignment.DataAccess.csproj
   detection_source: src/Assignment.DataAccess/Assignment.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 20:14:50.000000000 Z
@@ -230,7 +245,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13059/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
-  detection_source_url: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:04:50.000000000 Z
@@ -244,7 +259,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13268/default_3b9faa77d26eef0a944d4dab8d562db23059cb72.png
-  detection_source_url: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:04:50.000000000 Z
@@ -259,8 +274,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12852/default_ccf90b566c21ad9eaa59733f297e535ea39fb3b4.png
-  detection_source_url: src/Assignment.DataAccess/Assignment.DataAccess.csproj
-  detection_source: src/Assignment.Domain/Assignment.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.DataAccess/Assignment.DataAccess.csproj
+  detection_source: src/Assignment.DataAccess/Assignment.DataAccess.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:46:40.000000000 Z
 - name: Microsoft.EntityFrameworkCore.InMemory
@@ -273,8 +288,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13150/default_81ac985912284073db895b0d26abf3657532a164.png
-  detection_source_url: test/Assignment.Test.Integration.Contact/Assignment.Test.Integration.Contact.csproj
-  detection_source: test/Assignment.Test.Shared/Assignment.Test.Shared.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Integration.Contact/Assignment.Test.Integration.Contact.csproj
+  detection_source: test/Assignment.Test.Integration.Contact/Assignment.Test.Integration.Contact.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:13:02.000000000 Z
 - name: Microsoft.Extensions.Hosting
@@ -287,7 +302,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13013/default_dd10728859f7e363ef13345d855b2daba48cace4.png
-  detection_source_url: src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
   detection_source: src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 22:32:27.000000000 Z
@@ -302,7 +317,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12940/default_54d470a1e19c265eb229b6bd88965fb8df9f9f78.png
-  detection_source_url: src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
   detection_source: src/Assignment.WorkerService.Report/Assignment.WorkerService.Report.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 22:32:27.000000000 Z
@@ -317,8 +332,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13216/default_e23dabba1be2c69fbf5fc50bdc46cbffbe6ca2cb.png
-  detection_source_url: test/Assignment.Test.Integration.Report/Assignment.Test.Integration.Report.csproj
-  detection_source: test/Assignment.Test.Web.Api.Report/Assignment.Test.Web.Api.Report.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Integration.Report/Assignment.Test.Integration.Report.csproj
+  detection_source: test/Assignment.Test.Integration.Report/Assignment.Test.Integration.Report.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 19:25:20.000000000 Z
 - name: Newtonsoft.Json
@@ -331,7 +346,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/nuget/image.png
-  detection_source_url: src/Assignment.Domain/Assignment.Domain.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.Domain/Assignment.Domain.csproj
   detection_source: src/Assignment.Domain/Assignment.Domain.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 12:46:40.000000000 Z
@@ -345,8 +360,8 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/12981/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
-  detection_source_url: src/Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj
-  detection_source: src/Assignment.Web.Core/Assignment.Web.Core.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/src/Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj
+  detection_source: src/Assignment.Web.Api.Report/Assignment.Web.Api.Report.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 19:25:20.000000000 Z
 - name: xunit.runner.visualstudio
@@ -359,7 +374,7 @@ tools:
   category: Libraries
   sub_category: NuGet Packages
   image_url: https://img.stackshare.io/package/13260/default_d2db5a200c4fe2d08cbdb2174cc230708973870b.png
-  detection_source_url: test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
-  detection_source: test/Assignment.Test.Web.Api.Contact/Assignment.Test.Web.Api.Contact.csproj
+  detection_source_url: https://github.com/anil-sezer/AssignmentToRise/blob/prod/test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
+  detection_source: test/Assignment.Test.Application.Contact/Assignment.Test.Application.Contact.csproj
   last_updated_by: anil
   last_updated_on: 2023-06-07 13:06:04.000000000 Z
